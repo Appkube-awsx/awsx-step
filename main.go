@@ -3,8 +3,8 @@ Copyright © 2023 Manoj Sharma manoj.sharma@synectiks.com
 */
 package main
 
-import "github.com/Appkube-awsx/awsx-getLambdas/cmd"
+import "github.com/Appkube-awsx/awsx-stepFunctions/commands"
 
 func main() {
-	cmd.Execute()
+	commands.Execute()
 }

@@ -1,4 +1,4 @@
-module github.com/Appkube-awsx/awsx-getLambdas
+module github.com/Appkube-awsx/awsx-stepFunctions
 
 go 1.19
 
