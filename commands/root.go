@@ -1,15 +1,13 @@
-/*
-Copyright © 2023 Manoj Sharma manoj.sharma@synectiks.com
-*/
 package commands
 
 import (
+	"log"
+
 	"github.com/Appkube-awsx/awsx-stepFunctions/authenticater"
 	"github.com/Appkube-awsx/awsx-stepFunctions/client"
 	"github.com/Appkube-awsx/awsx-stepFunctions/commands/stepFunctioncmd"
 	"github.com/aws/aws-sdk-go/service/sfn"
 	"github.com/spf13/cobra"
-	"log"
 )
 
 // AwsxCloudElementsCmd represents the base command when called without any subcommands
@@ -60,7 +58,7 @@ func Execute() {
 
 func init() {
 	AwsxStateMachineCmd.AddCommand(stepFunctioncmd.GetConfigDataCmd)
-	AwsxStateMachineCmd.AddCommand(stepFunctioncmd.GetCostDataCmd)
+
 	AwsxStateMachineCmd.PersistentFlags().String("vaultUrl", "", "vault end point")
 	AwsxStateMachineCmd.PersistentFlags().String("accountId", "", "aws account number")
 	AwsxStateMachineCmd.PersistentFlags().String("zone", "", "aws region")

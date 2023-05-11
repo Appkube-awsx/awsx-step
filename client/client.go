@@ -2,13 +2,15 @@ package client
 
 import (
 	"fmt"
+
 	"github.com/Appkube-awsx/awsx-stepFunctions/awssession"
 	"github.com/aws/aws-sdk-go/service/costexplorer"
 	"github.com/aws/aws-sdk-go/service/sfn"
 
+	"log"
+
 	"github.com/aws/aws-sdk-go/aws"
 	"github.com/aws/aws-sdk-go/service/sts"
-	"log"
 )
 
 func GetClient(region string, crossAccountRoleArn string, accessKey string, secretKey string, externalId string) *sfn.SFN {

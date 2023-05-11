@@ -1,16 +1,14 @@
-/*
-Copyright © 2023 NAME HERE <EMAIL ADDRESS>
-*/
 package stepFunctioncmd
 
 import (
 	"fmt"
+	"log"
+
 	"github.com/Appkube-awsx/awsx-stepFunctions/authenticater"
 	"github.com/Appkube-awsx/awsx-stepFunctions/client"
 	"github.com/aws/aws-sdk-go/aws"
 	"github.com/aws/aws-sdk-go/service/sfn"
 	"github.com/spf13/cobra"
-	"log"
 )
 
 // getConfigDataCmd represents the getConfigData command
